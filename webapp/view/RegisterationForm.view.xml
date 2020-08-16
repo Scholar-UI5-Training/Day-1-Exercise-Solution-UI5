@@ -1,0 +1,76 @@
+<mvc:View controllerName="ExerciseSolution.ExerciseSolution.controller.RegisterationForm" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:core="sap.ui.core" displayBlock="true" xmlns="sap.m">
+	<Shell id="shell" class="sapUiSizeCompact">
+		<App id="app">
+			<pages>
+				<Page id="page" showHeader="false" enableScrolling="false" class="parentPage">
+					<content>
+						<HBox class="mainHBox">
+							<VBox class="genInfoVBox">
+								<Title text="General Information" titleStyle="H3" class="genInfoTitle"/>
+								<VBox class="genInfoContentVBox">
+									<ComboBox placeholder="Title" width="100%" class="sapUiSmallMarginBottom">
+										<core:Item key="1" text="Mr."/>
+										<core:Item key="2" text="Mrs."/>
+										<core:Item key="3" text="Miss"/>
+									</ComboBox>
+									<HBox width="100%" class="sapUiSmallMarginBottom">
+										<Input placeholder="First Name" width="97%"/>
+										<Input placeholder="Last Name" width="97%" class="lNameInput"/>
+									</HBox>
+									<RadioButtonGroup columns="3" width="100%" selectedIndex="-1" class="sapUiSmallMarginBottom">
+										<RadioButton id="male" text="Male"/>
+										<RadioButton id="female" text="Female"/>
+										<RadioButton id="other" text="Others"/>
+									</RadioButtonGroup>
+									<ComboBox placeholder="Course" width="100%" class="sapUiSmallMarginBottom">
+										<core:Item key="1" text="BCA"/>
+										<core:Item key="2" text="MCA"/>
+										<core:Item key="3" text="BBA"/>
+										<core:Item key="4" text="MBA"/>
+										<core:Item key="5" text="B.Tech"/>
+										<core:Item key="6" text="M.Tech"/>
+									</ComboBox>
+									<Input type="Password" placeholder="Password" width="100%" class="sapUiSmallMarginBottom"/>
+									<Input type="Password" placeholder="Confirm Password" width="100%" class="sapUiSmallMarginBottom"/>
+								</VBox>
+							</VBox>
+							<VBox class="contactVBox">
+								<Title text="Contact Details" titleStyle="H3" class="contactTitle"/>
+								<VBox class="contactContentVBox">
+									<Input placeholder="House/Flat Number + Building Name" width="100%" class="sapUiSmallMarginBottom"/>
+									<Input placeholder="Additional Information" width="100%" class="sapUiSmallMarginBottom"/>
+									<HBox class="sapUiSmallMarginBottom">
+										<Input placeholder="Zip Code" type="Number" width="50%"/>
+										<ComboBox placeholder="State" width="164%" class="stateCB">
+											<core:Item key="1" text="Delhi"/>
+											<core:Item key="2" text="Karnataka"/>
+											<core:Item key="3" text="Kolkata"/>
+											<core:Item key="4" text="Rajasthan"/>
+											<core:Item key="5" text="Maharashtra"/>
+										</ComboBox>
+									</HBox>
+									<ComboBox placeholder="Country" width="100%" class="sapUiSmallMarginBottom">
+										<core:Item key="1" text="India"/>
+										<core:Item key="2" text="Germany"/>
+										<core:Item key="3" text="United States"/>
+									</ComboBox>
+									<HBox class="sapUiSmallMarginBottom">
+										<Input placeholder="Code +" width="50%"/>
+										<Input placeholder="Phone Number" type="Tel" width="210%" class="phNumber"/>
+									</HBox>
+									<Input placeholder="Email" type="Email" width="100%" class="sapUiSmallMarginBottom"/>
+									<HBox alignItems="Center" class="sapUiMediumMarginBottom">
+										<CheckBox />
+										<FormattedText htmlText="{/HTML}"/>
+									</HBox>
+									<Button text="Register Student"/>
+								</VBox>
+							</VBox>
+						</HBox>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

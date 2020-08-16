@@ -7,7 +7,7 @@
 					<content>
 						<HBox class="mainHBox">
 							<VBox class="genInfoVBox">
-								<Title text="General Information" titleStyle="H3" class="genInfoTitle"/>
+								<Title text="General Information" titleStyle="H3" class="genInfoTitle sapUiSmallMarginBottom"/>
 								<VBox class="genInfoContentVBox">
 									<ComboBox placeholder="Title" width="100%" class="sapUiSmallMarginBottom">
 										<core:Item key="1" text="Mr."/>
@@ -36,7 +36,7 @@
 								</VBox>
 							</VBox>
 							<VBox class="contactVBox">
-								<Title text="Contact Details" titleStyle="H3" class="contactTitle"/>
+								<Title text="Contact Details" titleStyle="H3" class="contactTitle sapUiSmallMarginBottom"/>
 								<VBox class="contactContentVBox">
 									<Input placeholder="House/Flat Number + Building Name" width="100%" class="sapUiSmallMarginBottom"/>
 									<Input placeholder="Additional Information" width="100%" class="sapUiSmallMarginBottom"/>
